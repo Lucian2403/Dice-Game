@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Dice Game</title>
+    <link rel="icon" href="dice-6.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body></body>
+
+    <!-- AUDIO SECTION -->
+    <audio id="newGame" src="sounds/newgame-sound-main.mp3" ></audio>
+    <audio class="rollSound" src="sounds/dice-sound-1.wav" ></audio>
+    <audio id="holdSound" src="sounds/hold-sound.mp3" ></audio>
+    <audio id="winSound" src="sounds/win-sound.mp3" ></audio>
+
+    <!-- UI SECTION -->
+
+    <!-- <section class="bkg_img" ></section> -->
+
+    <section class="main-title">
+        <h1>Pig Dice Game</h1>
+        <span>made by Lucian Ciubotaru</span>
+    </section>
+
+    <main class="wrapper container">
+
+        <button class="btn btn-new">New Game</button>
+
+        <section class="players">
+            <div class="player_area-0 active" id="player-0">
+                <h2>Player 1</h2>
+
+                <div class="global_score" id="global_score-0">
+                    <span>0</span>
+                </div>
+
+                <div class="current_score" id="current_score-0">
+                    <h3>Current score</h3>
+                    <span>0</span>
+                </div>
+            </div>
+            
+            <div class="player_area-1" id="player-1">
+                 <h2>Player 2</h2>
+
+                 <div class="global_score" id="global_score-1">
+                     <span>0</span>
+                </div>
+
+                 <div class="current_score" id="current_score-1">
+                     <h3> Current score </h3>
+                     <span> 0 </span>
+                </div>
+            </div>
+        </section>
+
+        <div class="btn-action">
+            <button class="btn btn-roll"> Roll dice </button>
+            <button class="btn btn-hold"> Hold </button>  
+        </div>
+            
+            <img src="dice-4.png" alt="dices" class="dice dice1">
+            <img src="dice-4.png" alt="dices" class="dice dice2">
+
+            <input class="score_input" placeholder="Final Score" type="text" id="myNumber">
+        
+    </main>
+
+    <section class="wrapper rules">
+        <h2>Rules:</h2>
+        <ul>
+            <li>The first player throw the dices and scores as many points as the total shown on the dices providing the dices doesn’t roll a 1 (each or both).</li>
+            <li>The player may continue rolling and accumulating points (but risk rolling a 1) or end his turn.</li>
+            <li>If the player rolls a 1 his turn is over, he loses all points he accumulated that turn, and he passes the dices to the next player.</li>
+            <li>The winner is the first to achieve the final score. If the final score is empty, the default score wil be 100 points.</li>
+        </ul>
+        <p>Good luck!</p>
+    </section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
