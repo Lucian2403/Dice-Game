@@ -83,7 +83,7 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
 
 document.querySelector(".btn-hold").addEventListener("click", function(){
     if (gameActive) {
-        globalScore[activePlayer] += curentScore;r
+        globalScore[activePlayer] += curentScore;
 
         document.querySelector("#global_score-" + activePlayer + " span").textContent = globalScore[activePlayer];
     
